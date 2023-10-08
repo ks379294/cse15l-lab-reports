@@ -38,4 +38,22 @@
 1. What the working directory was when the command was run: 
 2. Why you I got that output: 
 3. Is the output is an error or not, and if it’s an error, why:
-4. 
+
+# Screenshot: cat with nothing
+![cd_directory](cd_directory.png)
+1. What the working directory was when the command was run: 
+2. Why you I got that output: 
+3. Is the output is an error or not, and if it’s an error, why: 
+
+# Screenshot: cat with directory
+![cd_directory](cd_directory.png)
+1. What the working directory was when the command was run: 
+2. Why you I got that output: 
+3. Is the output is an error or not, and if it’s an error, why:
+   
+# Screenshot: cat with file
+![cd_directory](cd_directory.png)
+1. What the working directory was when the command was run: 
+2. Why you I got that output: 
+3. Is the output is an error or not, and if it’s an error, why:
+
