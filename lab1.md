@@ -10,7 +10,7 @@ Screenshot: `cd`  with nothing
 ![cd_directory](cd_directory.png)
 Screenshot: `cd` with directory
 1. What the working directory was when the command was run: `/home` (before running command) `/home/lecture1/messages` (after running command)
-2. Why you I got that output: I got this output because I specified that the I wanted to switch my directory to the folder messages, which is stored in the folder lecture1. This output indicates that the working directory was changed to the messages folder.
+2. Why you I got that output: I got this output because I specified that the I wanted to switch my directory to the folder messages, which is stored in the folder `lecture1`. This output indicates that the working directory was changed to the messages folder. 
 3. Is the output is an error or not, and if it’s an error, why: This is not an error. No error message was returned.
 
 
@@ -24,7 +24,7 @@ Screenshot: `cd` with file
 ![ls_none](ls_none.png)
 Screenshot: `ls` with nothing
 1. What the working directory was when the command was run: `/home`
-2. Why you I got that output: Since I am in the `/home` directory, I got the folder name lecture1, since that is the only folder or file in the `/home` directory.
+2. Why you I got that output: Since I am in the `/home` directory, I got the folder `lecture1`, since that is the only folder or file in the `/home` directory.
 3. Is the output is an error or not, and if it’s an error, why: It is not an error, because it is doing the right function - it's just listing all the files and folder in the current directory.
 
 
