@@ -3,7 +3,7 @@
 # Screenshot: cd with nothing
 ![Image](cd_none.png)
 
-1. What the working directory was when the command was run: '/home'
+1. What the working directory was when the command was run: `/home`
 2. Why you I got that output: No change, because there was no directory provided.
 3. Is the output is an error or not, and if it’s an error, why: This is not an error. No error message was returned, it just didn't switch directories because no directory was mentioned.
 
