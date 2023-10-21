@@ -58,7 +58,7 @@ Screenshot: `cat` with directory
 ![cat_text](cat_text.png)
 Screenshot: `cat` with file
 1. What the working directory was when the command was run: `/home`
-2. Why you I got that output: This `cat` command outputs the contents of a file. Since the file says Salut tout le monde!, that's what was printed out.
+2. Why you I got that output: This `cat` command outputs the contents of a file. Since the file contents are `Salut tout le monde!`, that's what was printed out.
 3. Is the output is an error or not, and if it’s an error, why: This is not an error. The `cat` command is supposed to print the output to the terminal.
 
 
