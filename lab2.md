@@ -1,4 +1,4 @@
-# Message 1
+## Message 1
 ![example1](hello.png)
 1. *Which methods in your code are called?* When the server is first started, the method public static void main(String args[]) is called. This calls the constructor StringHandler() and then it calls the method public String handleRequest(URI url) 
 
@@ -10,7 +10,7 @@ The relevant argument of handleRequest is the url, which is the url typed into t
 This changes the value of private static String masterString from an empty string to the string “\n 1. Hello”.  The private static int index variable changes from 0 to 1. 
 
 
-# Message 2
+## Message 2
 ![version2](howareyou.png)
 
 1. *Which methods in your code are called?* The method public String handleRequest(URI url) is called.
