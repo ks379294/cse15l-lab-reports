@@ -1,7 +1,6 @@
 # Message 1
 ![example1](hello.png)
-
-* *Which methods in your code are called?* *
+*Which methods in your code are called?*
 
 When the server is first started, the method public static void main(String args[]) is called. This calls the constructor StringHandler() and then it calls the method 
 public String handleRequest(URI url) 
