@@ -2,7 +2,7 @@
 ![stringserver](stringservercode.png)
 ## Message 1
 ![example1](hello.png)
-1. *Which methods in your code are called?* When the server is first started, the method `public static void main(String args[])` is called. This calls the constructor `StringHandler()` and then it calls the method public String handleRequest(URI url) 
+1. *Which methods in your code are called?* When the server is first started, the method `public static void main(String args[])` is called. This calls the constructor `StringHandler()` and then it calls the method public String handleRequest(URI url)     
 
 2. *What are the relevant arguments to those methods, and the values of any relevant fields of the class?*
 The relevant argument to `public static void main(String args[])` is the server number, which is taken from `args[0]`
