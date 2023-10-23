@@ -22,9 +22,10 @@ This changes the value of private static String masterString from an empty strin
 
 The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
 ![private key](pub_key_home.png)
-## Public Key
 
+The path is: /Users/administrator/.ssh/id_rsa
+## Public Key
+![public key](pub_key_ieng6.png)
 The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
 ## No Password
-
 A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
