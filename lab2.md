@@ -33,4 +33,4 @@ This changes the value of `private static String masterString` from an empty str
 
 ## Something Learned in Lab
 
-I learned how to use the public key to log in to the remote server without entering my password. Severs confused me. I know now how to open up a server and the meaning of the term  path, absolute path, and query. I'm still learning how to 
+I learned how to use the public key to log in to the remote server without entering my password. Severs confused me. I know now how to open up a server and the meaning of the term  path, absolute path, and query. I'm still learning the formatting of `.md` files on Github.
