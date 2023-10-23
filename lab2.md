@@ -21,7 +21,7 @@ This changes the value of private static String masterString from an empty strin
 ## Private Key
 
 The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
-
+![private key](pub_key_home.png)
 ## Public Key
 
 The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
