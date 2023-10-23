@@ -1,4 +1,4 @@
-## Code for the server
+## Code
 ![stringserver](stringservercode.png)
 ## Message 1
 ![example1](hello.png)
