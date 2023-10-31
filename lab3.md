@@ -11,11 +11,16 @@
 ## Command 1
 The command used here is `-type`
 Give 2 examples of using it on files and directories from `./technical`:
+Example 1: Using `-type` for a socket in the directory, code block that shows the command and its output:
+
 ```
 (base) administrator@Administrators-MacBook-Pro docsearch % find technical -type s
 (base) administrator@Administrators-MacBook-Pro docsearch %
 ```
-Example 1: Using `-type` for a socket in the directory
+
+Write a sentence or two about what it’s doing and why it’s useful: This is telling me that tere are no socket files in `./technical` directory. That is why there is no printed output, because no socket files have been found. This is useful because it can tell me immediately there are no socket files without me having to do a manual search.
+
+Example 2: Using `-type` to get directories in the directory, code block that shows the command and its output:
 ```
 (base) administrator@Administrators-MacBook-Pro docsearch % find technical -type d
 technical
@@ -30,7 +35,8 @@ technical/plos
 technical/biomed
 technical/911report
 ```
-Example 2: Using `-type` to get directories in the directory
+Write a sentence or two about what it’s doing and why it’s useful: This output is all the directories in the `./technical` directory. This is useful, because if I wanted to find a certain subdirectory in the this directory, I could just look at this list instead of looking through thousands of files.
+
 
 Show each example as a code block that shows the command and its output:
 
