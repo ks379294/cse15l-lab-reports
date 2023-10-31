@@ -10,7 +10,7 @@
 
 ## Command 1
 The command used here is `-type`
-Give 2 examples of using it on files and directories from ./technical:
+Give 2 examples of using it on files and directories from `./technical`:
 ```
 (base) administrator@Administrators-MacBook-Pro docsearch % find technical -type s
 (base) administrator@Administrators-MacBook-Pro docsearch %
