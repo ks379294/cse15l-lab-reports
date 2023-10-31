@@ -6,9 +6,16 @@
 
 # Part 2
 1. Consider the commands less, find, and grep. Choose one of them: For this exercise, I'm choosing the find command.
-2. Online, find 4 interesting command-line options or alternate ways to use the command you chose:
-For this one, I'm choosing the command -type:
+2. Online, find 4 interesting command-line options or alternate ways to use the command you chose: `-type`, `-newerct`, `-exec`, `-mtime`
+
+##Command 1
+The command used here is `-type`
 Give 2 examples of using it on files and directories from ./technical:
+```
+(base) administrator@Administrators-MacBook-Pro docsearch % find technical -type s
+(base) administrator@Administrators-MacBook-Pro docsearch %
+```
+Example 1: Using `-type` for a socket in the directory
 ```
 (base) administrator@Administrators-MacBook-Pro docsearch % find technical -type d
 technical
@@ -23,6 +30,8 @@ technical/plos
 technical/biomed
 technical/911report
 ```
+Example 2: Using `-type` to get directories in the directory
+
 Show each example as a code block that shows the command and its output:
 
 Write a sentence or two about what it’s doing and why it’s useful:
