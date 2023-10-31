@@ -7,9 +7,30 @@
 # Part 2
 1. Consider the commands less, find, and grep. Choose one of them: For this exercise, I'm choosing the find command.
 2. Online, find 4 interesting command-line options or alternate ways to use the command you chose:
-For this one, I'm choosing the
+For this one, I'm choosing the command -type:
+Give 2 examples of using it on files and directories from ./technical:
+```
+(base) administrator@Administrators-MacBook-Pro docsearch % find technical -type d
+technical
+technical/government
+technical/government/About_LSC
+technical/government/Env_Prot_Agen
+technical/government/Alcohol_Problems
+technical/government/Gen_Account_Office
+technical/government/Post_Rate_Comm
+technical/government/Media
+technical/plos
+technical/biomed
+technical/911report
+```
+Show each example as a code block that shows the command and its output:
 
-Here are a few ways to use pattern matching. With find, you can include wildcard characters such as `*`, `[ ]`, `?`, and `\`.
-5. To find information about the commands, a simple Web search like “find command-line options” will probably give decent results. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands; you can use man grep, for example, to see a long listing of information about how grep works. Also consider asking ChatGPT!
+Write a sentence or two about what it’s doing and why it’s useful:
+
+For this method, I'm choosing the command -newerct
+
+for this one, I'm choosing the command -exec
+
+For this one, I'm choosing the command -mtime
 
 
