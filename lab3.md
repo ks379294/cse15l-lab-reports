@@ -8,7 +8,7 @@
 1. Consider the commands less, find, and grep. Choose one of them: For this exercise, I'm choosing the find command.
 2. Online, find 4 interesting command-line options or alternate ways to use the command you chose: `-type`, `-newerct`, `-exec`, `-mtime`
 
-##Command 1
+## Command 1
 The command used here is `-type`
 Give 2 examples of using it on files and directories from ./technical:
 ```
