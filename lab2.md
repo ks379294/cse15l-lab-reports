@@ -22,10 +22,10 @@ This changes the value of `private static String masterString` from an empty str
 
 ## Private Key
 
-![private key](pub_key_home.png)
+![private key](private_key.png)
 1. *The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer):* `/Users/administrator/.ssh/id_rsa`
 ## Public Key
-![public key](pub_key_ieng6.png)
+![public key](public_key.png)
 1. *The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6):* `/Users/administrator/.ssh/id_rsa.pub`
 ## No Password
 ![no_pass](no_password.png)
