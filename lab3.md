@@ -21,7 +21,7 @@ public void testReverseInPlaceSingle() {
 ```
 The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
 
-[symptom.png](symptom.png)
+![symptom.png](symptom.png)
 
 Runs into an error because it outputs `{5, 5}` instead of `{5, 3}`.
 
