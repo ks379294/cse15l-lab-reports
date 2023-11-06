@@ -62,9 +62,9 @@ Example 1: Using `-mtime` to get items modified in the last six days, code block
 ../technical/911report//chapter-10.txt
 ../technical/911report//chapter-11.txt
 ```
-Write a sentence or two about what it’s doing and why it’s useful:
+Write a sentence or two about what it’s doing and why it’s useful: In this case, I'm looking for all files that have been modified less than six days ago. It searches for all files that have been modified in this time range. It's useful if I want to check files that I've changed recently.
 
-Example 2: Example 1: Using `-mtime` to get items modified 5 or more days ago, code block that shows the command and its output:
+Example 2: Using `-mtime` to get items modified 5 or more days ago, code block that shows the command and its output: 
  
 ```
 (base) administrator@Administrators-MacBook-Pro technical % find ../technical/911report/ -mtime +5
@@ -88,7 +88,7 @@ Example 2: Example 1: Using `-mtime` to get items modified 5 or more days ago, c
 ../technical/911report//chapter-11.txt
 (base) administrator@Administrators-MacBook-Pro technical % 
 ```
-Write a sentence or two about what it’s doing and why it’s useful:
+Write a sentence or two about what it’s doing and why it’s useful: In this command, it looks for the files that have been modified five or more days ago. This is useful when I want to find the files that have been changed a while ago.
 
 ## Command 3
 
@@ -97,7 +97,7 @@ Example 1: Using `-name` to find a file by name, code block that shows the comma
 (base) administrator@Administrators-MacBook-Pro technical % find ../technical -name "commission_report.txt" 
 ../technical/government/About_LSC/commission_report.txt
 ```
-Write a sentence or two about what it’s doing and why it’s useful:
+Write a sentence or two about what it’s doing and why it’s useful: I'm looking for a file called `"commission_report.txt"`. This command searches for all files with matching names, and ouptuts the path. This is useful if I don't know which folder the file is in, but I know the file name.
 
 
 Example 2: Using `-name` to find a different by name, code block that shows the command and its output:
@@ -105,7 +105,7 @@ Example 2: Using `-name` to find a different by name, code block that shows the 
 (base) administrator@Administrators-MacBook-Pro technical % find ../technical/ -name "chapter-1.txt"           
 ../technical//911report/chapter-1.txt
 ```
-Write a sentence or two about what it’s doing and why it’s useful:
+Write a sentence or two about what it’s doing and why it’s useful: In this case, I'm looking for a file called `"chapter-1.txt"`. If I know the file's name, but not its path, this is a helpful way to find any given file in the directory.
 
 ## Command 4
 
@@ -122,6 +122,7 @@ Example 1: Using the `-iname` command to find similar names, code block that sho
 ../technical/government/About_LSC/State_Planning_Special_Report.txt
 ../technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
 ```
+Write a sentence or two about what it’s doing and why it’s useful: This command is looking for all files with similar names to the input `"*report*txt"`, and it looks at all the files in the given directory `../technical/government`. It's useful if I know a word or two in the file name, but I don't know which folder it is in or the full name.
 
 Example 2: Using the `-iname` command to find files with similar names, code block that shows the command and its output:
 
@@ -130,6 +131,6 @@ Example 2: Using the `-iname` command to find files with similar names, code blo
 ../technical/government/Env_Prot_Agen/tech_sectiong.txt
 ../technical/government/Env_Prot_Agen/tech_adden.txt
 ```
-
+Write a sentence or two about what it’s doing and why it’s useful: This command looks for all files in the `../technical` directory that have `"tech*txt"` in the file name. It's helpful if I'm trying to find a file where I know a few parts of the file name and I don't know which folder it is in.
 
 
