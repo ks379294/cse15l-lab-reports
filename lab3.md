@@ -109,7 +109,8 @@ Write a sentence or two about what it’s doing and why it’s useful:
 
 ## Command 4
 
-Example 1:
+Example 1: Using the `-iname` command to find similar names, code block that shows the command and its output:
+
 ```
 (base) administrator@Administrators-MacBook-Pro technical % find ../technical/government -iname "*report*txt" 2>/dev/null 
 ../technical/government/About_LSC/Progress_report.txt
@@ -122,7 +123,7 @@ Example 1:
 ../technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
 ```
 
-Example 2:
+Example 2: Using the `-iname` command to find files with similar names, code block that shows the command and its output:
 
 ```
 (base) administrator@Administrators-MacBook-Pro technical % find ../technical -iname "tech*txt" 2>/dev/null 
