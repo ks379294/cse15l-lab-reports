@@ -15,13 +15,19 @@ Keys pressed: `ssh cs15lfa23fq@ieng6.ucsd.edu`
 
 # Step 5
 Clone your fork of the repository from your Github account (using the SSH URL)
-![login.png](login.png)
+Copying from Github:
+![ssh_url.png](ssh_url.png)
+Using the command `git clone`:
+![git_clone.png](git_clone.png)
 
-Keys pressed: `Command +C` to copy the ssh url. I typed `git clone` and then `Command + V` to paste the url.
-Keys pressed: 
+Keys pressed: `Command +C` to copy the ssh url. I typed `git clone` and then `Command + V` to paste the URL and then `<enter>`
+
 # Step 6
 Run the tests, demonstrating that they fail
-![login.png](login.png)
+![tests_failing.png](tests_failing.png)
+
+Keys Pressed: `ls` `<enter>` I used this to find where the lab folder was. `cd lab7`, `<enter>` to get into the `lab7` folder.
+Then I ran the tests using `bash test.sh <enter>`
 
 # Step 7
 Edit the code file to fix the failing test
