@@ -11,13 +11,13 @@ Steps listed:
 # Step 4
 Log into ieng6
 ![login.png](login.png)
-
 Keys pressed: `ssh cs15lfa23fq@ieng6.ucsd.edu`
 
 # Step 5
 Clone your fork of the repository from your Github account (using the SSH URL)
 ![login.png](login.png)
 
+Keys pressed: `Command +C` to copy the ssh url. I typed `git clone` and then `Command + V` to paste the url.
 Keys pressed: 
 # Step 6
 Run the tests, demonstrating that they fail
