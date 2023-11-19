@@ -31,16 +31,33 @@ Keys Pressed: `ls` `<enter>` I used this to find where the lab folder was. `cd l
 
 # Step 7
 Edit the code file to fix the failing test
-![login.png](login.png)
+![vim_example.png](vim_example.png)
+Keys pressed: `vim ListExamples.java` `<enter>` I used this to open up the file `ListExamples.java`
+File before change:
+![before_change.png](before_change.png)
 
-Keys pressed: `vim ListExamplesTests.java` `<enter>` I used this to open up the file `ListExamplesTests.java`
-
+Then I pressed: `\change` to get to the error and pressed `<enter>` To modify the index number, I put this in: 
+`<down><right><right>` to get to the number, then `control + a` to increment the number.
+Then I saved this by pressing `:wq` `<enter>` to write the file and close `vim`.
+File after change:
+![after_change.png](after_change.png)
 
 # Step 8
 Run the tests, demonstrating that they now succeed
-![login.png](login.png)
+![run_tests_after_change.png](run_tests_after_change.png)
+Keys pressed: I pressed `bash test.sh` `<enter>`
 
 
 # Step 9
 Commit and push the resulting change to your Github account (you can pick any commit message!)
-![login.png](login.png)
+
+Keys pressed: `git commit --all` `<enter>` This commits all changes
+Initial command:
+![git_commit_before_message.png](git_commit_before_message.png)
+
+The message box opens up:
+![git_commit_message.png](git_commit_message.png)
+
+Keys pressed: `i` to enter `INSERT` mode, `Fixed ListExamples.java` as my message `ESC` to go into `NORMAL` mode, then `:wq` `<enter>` to save the message.
+![git_commit_after_message.png](git_commit_after_message.png)
+Keys pressed: `git push` to `push` changes to the `origin`.
