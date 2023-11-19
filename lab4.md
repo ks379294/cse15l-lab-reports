@@ -27,11 +27,14 @@ Run the tests, demonstrating that they fail
 ![tests_failing.png](tests_failing.png)
 
 Keys Pressed: `ls` `<enter>` I used this to find where the lab folder was. `cd lab7`, `<enter>` to get into the `lab7` folder.
-Then I ran the tests using `bash test.sh <enter>`
+`ls` `<enter>` to find the test file. Then I ran the tests using `bash test.sh <enter>`
 
 # Step 7
 Edit the code file to fix the failing test
 ![login.png](login.png)
+
+Keys pressed: `vim ListExamplesTests.java` `<enter>` I used this to open up the file `ListExamplesTests.java`
+
 
 # Step 8
 Run the tests, demonstrating that they now succeed
