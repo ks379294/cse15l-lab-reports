@@ -60,4 +60,7 @@ The message box opens up:
 
 Keys pressed: `i` to enter `INSERT` mode, `Fixed ListExamples.java` as my message `ESC` to go into `NORMAL` mode, then `:wq` `<enter>` to save the message.
 ![git_commit_after_message.png](git_commit_after_message.png)
-Keys pressed: `git push` to `push` changes to the `origin`.
+Keys pressed: `git push` `<enter>` to `push` changes to `main`.
+![git_push.png](git_push.png)
+
+
