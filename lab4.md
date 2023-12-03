@@ -42,6 +42,9 @@ Keys pressed: I pressed `bash test.sh` `<enter>`
 
 # Step 9
 Commit and push the resulting change to your Github account (you can pick any commit message!)
+Keys pressed: `git add --all` `<enter>` This adds new files or changes to the Git staging area.
+Picture:
+![git_add.png](git_add.png)
 
 Keys pressed: `git commit --all` `<enter>` This commits all changes
 Initial command:
