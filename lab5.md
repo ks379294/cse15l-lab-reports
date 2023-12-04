@@ -60,6 +60,32 @@ The full command line (or lines) you ran to trigger the bug: I typed `bash.sh` `
 ```
 ![cmd_trigger.png](cmd_trigger.png)
 
+The change that fixes the bug:
+```
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.*;
+
+public class CarAssignment {
+    public static void assignCars(List<String> passengers, List<String> drivers) {
+        Map<String, List<String>> carAssignments = new HashMap<>();
+        for (String driver : drivers) {
+            carAssignments.put(driver, new ArrayList<>());
+        }
+        Collections.sort(drivers, Collections.reverseOrder());
+        int driverIndex = 0;
+        for (String passenger : passengers) {
+            String driver = drivers.get(driverIndex);
+            carAssignments.get(driver).add(passenger);
+            driverIndex = (driverIndex + 1) % drivers.size();
+        }
+        System.out.println(carAssignments);
+    }
+}
+```
+![fixed_bug.png](fixed_bug.png)
+
 A description of what to edit to fix the bug:
 
 - The error was caused by an attempt to modify a list that is does not allow modification. 
