@@ -15,7 +15,7 @@ The post from the student with a screenshot showing a symptom:
 A response from a TA asking a leading question or suggesting a command to try:
 
 Hi there!
-It looks like your error is from the `remove` occurring. Have you considered that you might be trying to modify a something without the ability to `remove`?
+It looks like your error is from the `remove` occurring. Have you considered that you might be trying to modify something without the ability to `remove`?
 Try using another way that doesn't involve `remove` and see if the error occurs.
 
 Another screenshot/terminal output showing what information the student got from trying that
