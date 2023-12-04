@@ -1,17 +1,62 @@
 
 # Context
-The file & directory structure needed:
 ![file_and_directory_structure.png](file_and_directory_structure.png)
+The file & directory structure needed
 
-The contents of `CarAssignment.java` before fixing the bug:
+
+The contents of `CarAssignment.java` before fixing the bug
+```
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.*;
+
+public class CarAssignment {
+    public static void assignCars(List<String> passengers, List<String> drivers) {
+        Map<String, List<String>> carAssignments = new HashMap<>();
+        for (String driver : drivers) {
+            carAssignments.put(driver, new ArrayList<>());
+        }
+        Collections.sort(drivers, Collections.reverseOrder());
+        for (String passenger : passengers) {
+            String driver = drivers.get(0);
+            carAssignments.get(driver).add(passenger);
+            drivers.remove(0);
+            drivers.add(driver);
+        }
+        System.out.println(carAssignments);
+    }
+}
+```
 ![car_assignment.png](car_assignment.png)
-The contents of `CarAssignmentTest.java` before fixing the bug:
+
+The contents of `CarAssignmentTest.java` before fixing the bug
+
+```
+# Compile Java files, run JUnitTests, clean up .class files
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore CarAssignmentTest
+rm *.class
+
+```
 ![car_assignment_test.png](car_assignment_test.png)
-The contents of `test.sh` before fixing the bug:
+
+
+```
+# Compile Java files, run JUnitTests, clean up .class files
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore CarAssignmentTest
+rm *.class
+```
+The contents of `test.sh` before fixing the bug
 ![test_sh.png](test_sh.png)
 
-The full command line (or lines) you ran to trigger the bug
 ![cmd_trigger.png](cmd_trigger.png)
+The full command line (or lines) you ran to trigger the bug
+```
+(base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
+```
+
 A description of what to edit to fix the bug
 
 
