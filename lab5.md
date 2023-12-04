@@ -54,13 +54,17 @@ rm *.class
 ![test_sh.png](test_sh.png)
 
 
-The full command line (or lines) you ran to trigger the bug
+The full command line (or lines) you ran to trigger the bug: I typed `bash.sh` `<enter>`
 ```
 (base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
 ```
 ![cmd_trigger.png](cmd_trigger.png)
 
-A description of what to edit to fix the bug
+A description of what to edit to fix the bug:
+
+- The error was caused by an attempt to modify a list that is does not allow modification. 
+- Instead of attempting to remove from the list, it uses an index to track which driver should be assigned to the passenger.
+- Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
 
 
 You should actually set up and run the scenario from your screenshots. 
