@@ -29,7 +29,7 @@ It looks like the bug was from using `remove` on `drivers`. Since `drivers` was 
 
 
 # Part 1 Setup
-Setup: A program that takes two `String` `List`, `passengers` and `drivers`.
+Setup: A program that takes two `String` `List`s, `passengers` and `drivers`.
 Each passenger gets a driver.
 ![structure.png](structure.png)
 The file & directory structure needed
@@ -118,8 +118,8 @@ public class CarAssignment {
 ![fixed_bug.png](fixed_bug.png)
 
 A description of what to edit to fix the bug:
-- The error was caused by an attempt to modify a list that is does not allow modification. 
-- Instead of attempting to `remove` from the list, it uses an index to track which driver should be assigned to the passenger.
+- The error was caused by an attempt to modify a `List` that is does not allow modification. 
+- Instead of attempting to `remove` from the list, it uses `driverIndex` to track which driver should be assigned to the passenger.
 - Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
 
 
