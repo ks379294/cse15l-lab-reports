@@ -1,5 +1,24 @@
 
-# Context
+
+# Part 1
+The student's description of a guess at the bug/some sense of what the failure-inducing input is:
+
+Hi,
+I'm running into an error on my file. I wrote the implmentation of CarAssignment and assigned each passenger a driver. But when I ran `bash test.sh` `<enter>`, the terminal gave me the error `java.lang.UnsupportedOperationException`.
+I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure.
+
+The post from the student with a screenshot showing a symptom:
+
+![student_symptom.png](student_symptom.png)
+A response from a TA asking a leading question or suggesting a command to try:
+
+Hi there!
+It looks like your output is from the `remove` occurring. Have you considered that you might be trying to modify a list without the ability to `remove`?
+
+Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
+
+
+# Part 1 Setup
 Setup: A program that takes a list of passengers and drivers, and assigns each passenger a driver.
 ![structure.png](structure.png)
 The file & directory structure needed
@@ -55,7 +74,7 @@ rm *.class
 ![test_sh.png](test_sh.png)
 
 
-The full command line (or lines) you ran to trigger the bug: I typed `bash.sh` `<enter>`
+The full command line (or lines) you ran to trigger the bug: I typed `bash test.sh` `<enter>`
 ```
 (base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
 ```
@@ -92,22 +111,6 @@ A description of what to edit to fix the bug:
 - The error was caused by an attempt to modify a list that is does not allow modification. 
 - Instead of attempting to remove from the list, it uses an index to track which driver should be assigned to the passenger.
 - Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
-
-
-You should actually set up and run the scenario from your screenshots. 
-
-
-# Part 1
-The original post from a student with a screenshot showing a symptom:
-
-The student's description of a guess at the bug/some sense of what the failure-inducing input is. 
-
-
-A response from a TA asking a leading question or suggesting a command to try:
-
-
-Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
-
 
 
 # Part 2
