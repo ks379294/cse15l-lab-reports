@@ -33,29 +33,35 @@ public class CarAssignment {
 The contents of `CarAssignmentTest.java` before fixing the bug
 
 ```
-# Compile Java files, run JUnitTests, clean up .class files
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore CarAssignmentTest
-rm *.class
+import java.util.*;
+import org.junit.Test;
 
+public class CarAssignmentTest {
+    @Test
+    public void testAssignCars() {
+        List<String> passengers = Arrays.asList("Alice", "Bob", "Charlie", "David");
+        List<String> drivers = Arrays.asList("Zoe", "Yvonne", "Xander", "Wendy");
+        CarAssignment.assignCars(passengers, drivers);
+    }
+}
 ```
 ![car_assignment_test.png](car_assignment_test.png)
 
-
+The contents of `test.sh` before fixing the bug
 ```
 # Compile Java files, run JUnitTests, clean up .class files
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore CarAssignmentTest
 rm *.class
 ```
-The contents of `test.sh` before fixing the bug
 ![test_sh.png](test_sh.png)
 
-![cmd_trigger.png](cmd_trigger.png)
+
 The full command line (or lines) you ran to trigger the bug
 ```
 (base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
 ```
+![cmd_trigger.png](cmd_trigger.png)
 
 A description of what to edit to fix the bug
 
