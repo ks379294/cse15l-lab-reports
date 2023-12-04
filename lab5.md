@@ -18,19 +18,19 @@ Hi there!
 It looks like your error is from the `remove` occurring. Have you considered that you might be trying to modify something without the ability to `remove`?
 Try using another way that doesn't involve `remove` and see if the error occurs.
 
-Another screenshot/terminal output showing what information the student got from trying that
+Another screenshot/terminal output showing what information the student got from trying that:
 
 Student:
 Thanks! I took out the `remove` method and it works now. I used `driverIndex` instead. There's a picture of my changes and my test case passing
 ![student_post_2.png](student_post_2.png)
 
 A clear description of what the bug is:
-It looks like the bug was from using `remove` on `drivers`. Since `drivers` was created from `Arrays.asList()` in the test file `CarAssignmentTest.java`, it was a fixed-size `List` that did not support the `remove` method. To avoid this issue, it was necessary to create a new variable to track current driver, rather than modify `drivers` with the `remove` method.
+It looks like the bug was from using `remove` on `drivers`. Since `drivers` was created from `Arrays.asList()` in the test file `CarAssignmentTest.java`, it was a fixed-size `List` that did not support the `remove` method. To avoid this issue, it was necessary to create a new variable to track current `driver`, rather than modify `drivers` with the `remove` method.
 
 
 # Part 1 Setup
 Setup: A program that takes two `String` `List`s, `passengers` and `drivers`.
-Each passenger gets a driver.
+Each `passenger` gets a `driver`.
 ![structure.png](structure.png)
 The file & directory structure needed
 
@@ -119,7 +119,7 @@ public class CarAssignment {
 
 A description of what to edit to fix the bug:
 - The error was caused by an attempt to modify a `List` that is does not allow modification. 
-- Instead of attempting to `remove` from the list, it uses `driverIndex` to track which driver should be assigned to the passenger.
+- Instead of attempting to `remove` from the list, it uses `driverIndex` to track which `driver` should be assigned to the `passenger`.
 - Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
 
 
