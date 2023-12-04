@@ -1,6 +1,7 @@
 
 # Context
-![file_and_directory_structure.png](file_and_directory_structure.png)
+Setup: A program that takes a list of passengers and drivers, and assigns each passenger a driver.
+![structure.png](structure.png)
 The file & directory structure needed
 
 The contents of `CarAssignment.java` before fixing the bug
