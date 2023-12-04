@@ -125,6 +125,5 @@ A description of what to edit to fix the bug:
 # Part 2
 In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. 
 
-This quarter, I learned how to use `jdb`. I've never used `jdb` to debug through `vim` before. 
-I also discovered how to publish my `lab1.md` or `lab4.md` files. I've never had to publish a page before.
-I also got a lot of experience using the shell scripts. Before this class, I'd never used `test.sh` or similar files to run my tests. I would type everything in the terminal instead.
+This quarter, I learned how to use `jdb`. I've never used `jdb` to debug through `vim` before. This is useful for remote servers.
+I worked a lot with other people's code, like in last week where I had to give feedback on their code. I liked the suggested structure on how to evaluate code and how give feedback politely. I also got a lot of experience using the shell scripts. Before this class, I'd never used `test.sh` or similar files to run my tests. I would type everything in the terminal instead.
