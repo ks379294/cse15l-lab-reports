@@ -21,7 +21,7 @@ Try using another way that doesn't involve `remove` and see if the error occurs.
 Another screenshot/terminal output showing what information the student got from trying that
 
 Student:
-Thanks! I took out the remove method and it works now. I used an index instead. There's a picture of my changes and my test cases passing
+Thanks! I took out the remove method and it works now. I used an index instead. There's a picture of my changes and my test case passing
 ![student_post_2.png](student_post_2.png)
 
 A clear description of what the bug is:
@@ -124,7 +124,7 @@ A description of what to edit to fix the bug:
 
 # Part 2
 In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. 
-It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. 
-It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
 
 This quarter, I learned how to use `jdb`. I've never used `jdb` to debug through `vim` before. 
+I also discovered how to publish my `lab1.md` or `lab4.md` files. I've never had to publish a page before.
+I also got a lot of experience using the shell scripts. Before this class, I'd never used `test.sh` or similar files to run my tests. I would type everything in the terminal instead.
