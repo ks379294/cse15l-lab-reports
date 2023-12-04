@@ -8,7 +8,9 @@ I'm running into an error on my file. I wrote the implmentation of CarAssignment
 I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure.
 
 The post from the student with a screenshot showing a symptom:
+![car_assignment_test.png](car_assignment_test.png)
 ![student_symptom.png](student_symptom.png)
+
 
 A response from a TA asking a leading question or suggesting a command to try:
 
