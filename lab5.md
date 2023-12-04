@@ -5,10 +5,10 @@ The student's description of a guess at the bug/some sense of what the failure-i
 
 Hi,
 I'm running into an error on my file. I wrote the implmentation of CarAssignment and assigned each passenger a driver. But when I ran `bash test.sh` `<enter>`, the terminal gave me the error `java.lang.UnsupportedOperationException`.
-I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure.
+I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure. I attached pictures of the error message and my implementation of `CarAssignment.java`.
 
 The post from the student with a screenshot showing a symptom:
-![car_assignment_test.png](car_assignment_test.png)
+![car_assignment.png](car_assignment.png)
 ![student_symptom.png](student_symptom.png)
 
 
