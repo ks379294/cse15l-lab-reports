@@ -3,7 +3,6 @@
 ![file_and_directory_structure.png](file_and_directory_structure.png)
 The file & directory structure needed
 
-
 The contents of `CarAssignment.java` before fixing the bug
 ```
 import java.util.ArrayList;
@@ -29,9 +28,7 @@ public class CarAssignment {
 }
 ```
 ![car_assignment.png](car_assignment.png)
-
 The contents of `CarAssignmentTest.java` before fixing the bug
-
 ```
 import java.util.*;
 import org.junit.Test;
