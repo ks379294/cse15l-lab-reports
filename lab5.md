@@ -8,14 +8,22 @@ I'm running into an error on my file. I wrote the implmentation of CarAssignment
 I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure.
 
 The post from the student with a screenshot showing a symptom:
-
 ![student_symptom.png](student_symptom.png)
+
 A response from a TA asking a leading question or suggesting a command to try:
 
 Hi there!
-It looks like your output is from the `remove` occurring. Have you considered that you might be trying to modify a list without the ability to `remove`?
+It looks like your error is from the `remove` occurring. Have you considered that you might be trying to modify a list without the ability to `remove`?
+Try using another way that doesn't involve `remove` and see if the error occurs.
 
-Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
+Another screenshot/terminal output showing what information the student got from trying that
+
+Student:
+Thanks! I took out the remove method and it works now. I used an index instead. There's a picture of my changes and my test cases passing
+![student_post_2.png](student_post_2.png)
+
+A clear description of what the bug is:
+It looks like the bug was from using remove on `drivers`. Since `drivers` was created from `Arrays.asList()` in the test file `CarAssignmentTest.java`, it was a fixed-size list that did not support the `remove` method. To avoid this issue, it was necessary to create a new variable to track current driver, rather than modify `drivers` with the `remove` method.
 
 
 # Part 1 Setup
@@ -107,7 +115,6 @@ public class CarAssignment {
 ![fixed_bug.png](fixed_bug.png)
 
 A description of what to edit to fix the bug:
-
 - The error was caused by an attempt to modify a list that is does not allow modification. 
 - Instead of attempting to remove from the list, it uses an index to track which driver should be assigned to the passenger.
 - Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
@@ -117,3 +124,5 @@ A description of what to edit to fix the bug:
 In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. 
 It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. 
 It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
+
+This quarter, I learned how to use `jdb`. I've never used `jdb` to debug through `vim` before. 
