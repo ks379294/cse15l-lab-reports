@@ -29,7 +29,7 @@ It looks like the bug was from using `remove` on `drivers`. Since `drivers` was 
 
 
 # Part 1 Setup
-Setup: A program that takes two `String` `List`s, `passengers` and `drivers`.
+Setup: A program that takes two `String` `Lists`, `passengers` and `drivers`.
 Each `passenger` gets a `driver`.
 ![structure.png](structure.png)
 The file & directory structure needed
