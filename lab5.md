@@ -35,6 +35,7 @@ Each `passenger` gets a `driver`.
 The file & directory structure needed
 
 The contents of `CarAssignment.java` before fixing the bug
+Code block:
 ```
 import java.util.ArrayList;
 import java.util.Collections;
@@ -58,8 +59,10 @@ public class CarAssignment {
     }
 }
 ```
+Screenshot of code block in `VSCode`:
 ![car_assignment.png](car_assignment.png)
 The contents of `CarAssignmentTest.java` before fixing the bug
+Code block:
 ```
 import java.util.*;
 import org.junit.Test;
@@ -73,25 +76,31 @@ public class CarAssignmentTest {
     }
 }
 ```
+Screenshot of code block in `VSCode`:
 ![car_assignment_test.png](car_assignment_test.png)
 
 The contents of `test.sh` before fixing the bug
+Code block:
 ```
 # Compile Java files, run JUnitTests, clean up .class files
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore CarAssignmentTest
 rm *.class
 ```
+Screenshot of code block in `VSCode`:
 ![test_sh.png](test_sh.png)
 
 
 The full command line (or lines) you ran to trigger the bug: I typed `bash test.sh` `<enter>`
+Code block:
 ```
 (base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
 ```
+Screenshot of code block in `VSCode`:
 ![cmd_trigger.png](cmd_trigger.png)
 
 The change that fixes the bug:
+Code block:
 ```
 import java.util.ArrayList;
 import java.util.Collections;
@@ -115,6 +124,7 @@ public class CarAssignment {
     }
 }
 ```
+Screenshot of code block in `VSCode`:
 ![fixed_bug.png](fixed_bug.png)
 
 A description of what to edit to fix the bug:
