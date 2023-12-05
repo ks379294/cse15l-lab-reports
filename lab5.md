@@ -1,30 +1,30 @@
 
 
 # Part 1
-The student's description of a guess at the bug/some sense of what the failure-inducing input is:
+### The student's description of a guess at the bug/some sense of what the failure-inducing input is:
 
 Hi,
 I'm running into an error on my file. I wrote the implmentation of `CarAssignment.java` and assigned each `passenger` a `driver`. But when I ran `bash test.sh` `<enter>`, the terminal gave me the error `java.lang.UnsupportedOperationException`.
 I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure. I attached pictures of the error message and my implementation of `CarAssignment.java`.
 
-The post from the student with a screenshot showing a symptom:
+### The post from the student with a screenshot showing a symptom:
 ![car_assignment.png](car_assignment.png)
 ![student_symptom.png](student_symptom.png)
 
 
-A response from a TA asking a leading question or suggesting a command to try:
+### A response from a TA asking a leading question or suggesting a command to try:
 
 Hi there!
 It looks like your error is from the `remove` occurring. Have you considered that you might be trying to modify something without the ability to `remove`?
 Try using another way that doesn't involve `remove` and see if the error occurs.
 
-Another screenshot/terminal output showing what information the student got from trying that:
+### Another screenshot/terminal output showing what information the student got from trying that:
 
 Student:
 Thanks! I took out the `remove` method and it works now. I used `driverIndex` instead. There's a picture of my changes and my test case passing
 ![student_post_2.png](student_post_2.png)
 
-A clear description of what the bug is:
+### A clear description of what the bug is:
 It looks like the bug was from using `remove` on `drivers`. Since `drivers` was created from `Arrays.asList()` in the test file `CarAssignmentTest.java`, it was a fixed-size `List` that did not support the `remove` method. To avoid this issue, it was necessary to create a new variable to track current `driver`, rather than modify `drivers` with the `remove` method.
 
 
@@ -34,7 +34,7 @@ Each `passenger` gets a `driver`.
 ![structure.png](structure.png)
 The file & directory structure needed
 
-The contents of `CarAssignment.java` before fixing the bug
+### The contents of `CarAssignment.java` before fixing the bug (code block and screenshot of code block)
 ```
 import java.util.ArrayList;
 import java.util.Collections;
@@ -59,8 +59,7 @@ public class CarAssignment {
 }
 ```
 ![car_assignment.png](car_assignment.png)
-Screenshot of code block in `VSCode`
-The contents of `CarAssignmentTest.java` before fixing the bug
+The contents of `CarAssignmentTest.java` before fixing the bug (code block and screenshot of code block)
 ```
 import java.util.*;
 import org.junit.Test;
@@ -74,28 +73,25 @@ public class CarAssignmentTest {
     }
 }
 ```
-Screenshot of code block in `VSCode`:
 ![car_assignment_test.png](car_assignment_test.png)
 
-The contents of `test.sh` before fixing the bug
+The contents of `test.sh` before fixing the bug (code block and screenshot of code block)
 ```
 # Compile Java files, run JUnitTests, clean up .class files
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore CarAssignmentTest
 rm *.class
 ```
-Screenshot of code block in `VSCode`:
 ![test_sh.png](test_sh.png)
 
 
-The full command line (or lines) you ran to trigger the bug: I typed `bash test.sh` `<enter>`
+The full command line (or lines) you ran to trigger the bug: I typed `bash test.sh` `<enter>` (code block and screenshot of code block)
 ```
 (base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
 ```
-Screenshot of code block in `VSCode`:
 ![cmd_trigger.png](cmd_trigger.png)
 
-The change that fixes the bug:
+The change that fixes the bug (code block and screenshot of code block):
 ```
 import java.util.ArrayList;
 import java.util.Collections;
@@ -119,7 +115,6 @@ public class CarAssignment {
     }
 }
 ```
-Screenshot of code block in `VSCode`:
 ![fixed_bug.png](fixed_bug.png)
 
 A description of what to edit to fix the bug:
