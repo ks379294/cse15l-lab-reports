@@ -59,7 +59,7 @@ public class CarAssignment {
 }
 ```
 ![car_assignment.png](car_assignment.png)
-The contents of `CarAssignmentTest.java` before fixing the bug (code block and screenshot of code block)
+### The contents of `CarAssignmentTest.java` before fixing the bug (code block and screenshot of code block)
 ```
 import java.util.*;
 import org.junit.Test;
@@ -75,7 +75,7 @@ public class CarAssignmentTest {
 ```
 ![car_assignment_test.png](car_assignment_test.png)
 
-The contents of `test.sh` before fixing the bug (code block and screenshot of code block)
+### The contents of `test.sh` before fixing the bug (code block and screenshot of code block)
 ```
 # Compile Java files, run JUnitTests, clean up .class files
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
@@ -85,13 +85,13 @@ rm *.class
 ![test_sh.png](test_sh.png)
 
 
-The full command line (or lines) you ran to trigger the bug: I typed `bash test.sh` `<enter>` (code block and screenshot of code block)
+### The full command line (or lines) you ran to trigger the bug: I typed `bash test.sh` `<enter>` (code block and screenshot of code block)
 ```
 (base) administrator@Administrators-MacBook-Pro ed_stem_lab5 copy % bash test.sh
 ```
 ![cmd_trigger.png](cmd_trigger.png)
 
-The change that fixes the bug (code block and screenshot of code block):
+### The change that fixes the bug (code block and screenshot of code block):
 ```
 import java.util.ArrayList;
 import java.util.Collections;
@@ -117,14 +117,14 @@ public class CarAssignment {
 ```
 ![fixed_bug.png](fixed_bug.png)
 
-A description of what to edit to fix the bug:
+### A description of what to edit to fix the bug:
 - The error was caused by an attempt to modify a `List` that is does not allow modification. 
 - Instead of attempting to `remove` from the list, it uses `driverIndex` to track which `driver` should be assigned to the `passenger`.
 - Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
 
 
 # Part 2
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. 
+### In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. 
 
 This quarter, I learned how to use `jdb`. I've never used `jdb` to debug through `vim` before. This is useful for remote servers.
 I worked a lot with other people's code, like in last week where I had to give feedback on their code. I liked the suggested structure on how to evaluate code and how give feedback politely. I also got a lot of experience using the shell scripts. Before this class, I'd never used `test.sh` or similar files to run my tests. I would type everything in the terminal instead.
