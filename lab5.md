@@ -5,7 +5,7 @@
 
 Hi,
 I'm running into an error on my file. I wrote the implmentation of `CarAssignment.java` and assigned each `passenger` a `driver`. But when I ran `bash test.sh` `<enter>`, the terminal gave me the error `java.lang.UnsupportedOperationException`.
-I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure. I attached pictures of the error message and my implementation of `CarAssignment.java`. My guess at the bug is that the `remove` method could be part of the problem, but I don't know why. I just see that it's mentioned in the error statement. 
+I'm not sure what could have triggered this error. I think it could be the changes to `drivers` but I'm not sure. I attached pictures of the error message and my implementation of `CarAssignment.java`. My guess at the bug is that the `remove` method could be part of the problem, but I don't know why. I just see that it's mentioned in the error statement. Maybe the failure-inducing input is that it was given a `String` `List` and this caused the method to crash?
 
 ### The post from the student with a screenshot showing a symptom:
 ![car_assignment.png](car_assignment.png)
