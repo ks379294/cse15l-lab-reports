@@ -21,7 +21,7 @@ Try using another way that doesn't involve `remove` and see if the error occurs.
 ### Another screenshot/terminal output showing what information the student got from trying that:
 
 Student:
-Thanks! I took out the `remove` method and it works now. I used `driverIndex` instead. There's a picture of my changes and my test case passing
+Thanks! I took out the `remove` method and it works now. I used `driverIndex` instead. There's a picture of my changes and my test case passing. I think you're right. It must be something about the `remove` method, and that the `drivers` `List` doesn't include a `remove` method.
 ![student_post_2.png](student_post_2.png)
 
 ### A clear description of what the bug is:
