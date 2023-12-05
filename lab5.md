@@ -119,7 +119,7 @@ public class CarAssignment {
 
 ### A description of what to edit to fix the bug:
 - The error was caused by an attempt to modify a `List` that is does not allow modification. 
-- Instead of attempting to `remove` from the list, it uses `driverIndex` to track which `driver` should be assigned to the `passenger`.
+- To fix the bug, instead of attempting to `remove` from the list, use `driverIndex` to track which `driver` should be assigned to the `passenger`.
 - Since the `drivers` list is not modified in the process, it does not produce the `java.lang.UnsupportedOperationException`. 
 
 
